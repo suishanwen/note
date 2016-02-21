@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.badge {
+    border-radius: 2px;
+}
+
+
+
+.background {
+    border: hidden;
+    font-size: 10px;
+}
+
+/*----------------------------------------------------nav-index------------------------------------------------*/
+.nav-index{
+    margin:0px auto;
+    padding:200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-index div {
+    font-size:30px;
+    display: inline-block;
+    border-radius:50%;
+    width: 300px;
+    height: 300px;
+    border: 1px solid green;
+    background: aqua url('../assets/img/flag.jpg') no-repeat center;
+    background-size: 300px;
+    text-align: center;
+}
+
+.nav-index div:hover {
+    border-radius:30%;
+    background-size: 200px;
+    cursor: pointer;
+    font-size:0px;
+}
+
+.nav-index .add:hover{
+    background: white url('../assets/img/back.jpg') no-repeat center;
+}
+
+.nav-index .find:hover{
+    background: white url('../assets/img/back2.jpg') no-repeat center;
+    background-size: 200px;
+}
+.nav-index div a{
+    color:white;
+    line-height: 300px;
+}
+/*----------------------------------------------------note-edit-index------------------------------------------------*/
+
+.note-edit-index  {
+    text-align:center;
+}
+
+.note-edit-index .note-info{
+    display: flex;
+    justify-content: space-between;
+    width:808px;
+    margin:0 auto;
+    padding:0;
+}
+
+.note-edit-index .note-subject {
+    background: red;
+}
+
+.note-edit-index .form-horizontal {
+    margin-top: 20px;
+    align: center;
+}
+
+.note-edit-index .form-horizontal .title {
+    width: 300px;
+}
+.note-edit-index .form-horizontal .poster {
+    width: 80px;
+}
+
+.note-edit-index .form-horizontal .content {
+    width: 800px;
+    height: 500px;
+    margin-top: 20px;
+}
+
+.note-edit-index .form-horizontal .operate {
+    margin-top: 20px;
+}
+
+
+/*----------------------------------------------------note-list-index------------------------------------------------*/
+
+.note-list-index ul li {
+    margin: 0 20px 20px;
+    padding: 0;
+}
+
+.note-list-index a:hover {
+    cursor: pointer;
+}
+
+.note-list-index .note-list .title{
+    display: inline-block;
+    width: 60%;
+}
+
+.note-list-index .note-list .update{
+    display: inline-block;
+    width: 20%;
+}
+
+    /*----------------------------------------------------note-index------------------------------------------------*/
+.note-index{
+    text-align:center;
+}
+
+.note-index .edit {
+    margin-top:20px;
+    font-size: 12px;
+    color: grey;
+}
+
+.note-index .title {
+    margin-top:20px;
+}
+
+.note-index .title span{
+    margin-right:50px;
+}
+
+.note-index .box{
+    width: 808px;
+    margin: 0 auto;
+}
+
+.note-index .box .content {
+    text-align: left;
+    margin:20px auto;
+}
+
+.eEditorClient{
+    text-align: left;
+    margin:20px auto;
+}
+
