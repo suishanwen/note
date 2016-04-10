@@ -1,4 +1,4 @@
-var NoteController = function ($scope, Path, $http, $timeout, $location,noteService) {
+var NoteController = function ($scope, $http, $timeout, $location,noteService) {
     var getNote=function(){
         var id=getQueryString(window.location.hash,"thread");
         if(!id){

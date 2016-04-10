@@ -1,4 +1,4 @@
-var NoteEditController = function ($scope, Path, $http, $timeout, $location, noteService) {
+var NoteEditController = function ($scope, $http, $timeout, $location, noteService) {
     var newNote = function () {
         $scope.selectedNote = {
             id: null,

@@ -1,4 +1,4 @@
-var NoteListController = function ($scope, Path, $http, $timeout, $location,noteService) {
+var NoteListController = function ($scope, $http, $location,noteService) {
     $scope.notes=[];
     var getNotes=function(){
         var url = noteService.server+"api/note/";
