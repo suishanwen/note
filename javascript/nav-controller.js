@@ -1,11 +1,8 @@
 var NavController = function ($scope, $location, noteService) {
     setBgHeight();
-    $(window).resize(function(){
-        setBgHeight();
-    });
+    $(window).resize(setBgHeight);
     $scope.toDoSomething = function (loc) {
-        $(window).resize(function(){
-        });
+        $(window).unbind('resize',setBgHeight);
         noteService.note=null;
         $location.path('/' + loc)
     };
