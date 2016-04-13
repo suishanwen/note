@@ -48,14 +48,14 @@
 }
 
 .nav-index .add:hover{
-    background: white url('../assets/img/back.jpg') no-repeat center;
-    /*background: white url('../assets/img/smile2.png') no-repeat center;*/
+    /*background: white url('../assets/img/back.jpg') no-repeat center;*/
+    background: white url('../assets/img/smile2.png') no-repeat center;
     background-size: 200px;
 }
 
 .nav-index .find:hover{
-    background: white url('../assets/img/back2.jpg') no-repeat center;
-    /*background: white url('../assets/img/smile.png') no-repeat center;*/
+    /*background: white url('../assets/img/back2.jpg') no-repeat center;*/
+    background: white url('../assets/img/smile.png') no-repeat center;
     background-size: 200px;
 }
 .nav-index div a{
