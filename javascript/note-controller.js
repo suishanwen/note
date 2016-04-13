@@ -14,6 +14,7 @@ var NoteController = function ($scope, $http, $timeout, $location,noteService) {
         var url = noteService.server+"api/note/get?id="+id;
         $http.get(url).success(function (data) {
             $scope.note=data;
+            $scope.buttonShow = false;
             $("#content")[0].innerHTML=$scope.note.content;
         }).error(function (data) {
         });
@@ -28,5 +29,11 @@ var NoteController = function ($scope, $http, $timeout, $location,noteService) {
 
     $scope.backList=function(){
         $location.path("/list");
+    };
+
+    $scope.buttonDelayHide = function () {
+        $timeout(function () {
+            $scope.buttonShow = false;
+        }, 8000)
     }
 };
