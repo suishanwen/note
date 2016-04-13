@@ -17,6 +17,10 @@
 }
 
 /*----------------------------------------------------nav-index------------------------------------------------*/
+.nav-main{
+    background: white url('../assets/img/bg.jpg') no-repeat;
+    background-size: 100%;
+}
 .nav-index{
     margin:0px auto;
     padding:200px;
@@ -31,8 +35,8 @@
     width: 300px;
     height: 300px;
     border: 1px solid green;
-    background: aqua url('../assets/img/flag.jpg') no-repeat center;
-    background-size: 300px;
+    /*background: aqua url('../assets/img/flag.jpg') no-repeat center;*/
+    /*background-size: 300px;*/
     text-align: center;
 }
 
@@ -45,6 +49,7 @@
 
 .nav-index .add:hover{
     background: white url('../assets/img/back.jpg') no-repeat center;
+    background-size: 200px;
 }
 
 .nav-index .find:hover{
