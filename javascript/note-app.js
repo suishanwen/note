@@ -3,19 +3,19 @@ noteApp.config(['$routeProvider',
     function ($routeProvider) {
         $routeProvider.
         when('/nav', {
-            templateUrl: 'nav.html',
+            templateUrl: '../note/nav.html',
             controller: 'NavController'
         }).
         when('/list', {
-            templateUrl: 'note-list.html',
+            templateUrl: '../note/note-list.html',
             controller: 'NoteListController'
         }).
         when('/note', {
-            templateUrl: 'note.html',
+            templateUrl: '../note/note.html',
             controller: 'NoteController'
         }).
         when('/note-edit', {
-            templateUrl: 'note-edit.html',
+            templateUrl: '../note/note-edit.html',
             controller: 'NoteEditController'
         }).otherwise({
             redirectTo: '/nav'
