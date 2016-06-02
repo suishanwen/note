@@ -10,9 +10,9 @@
     </div>
     <div class="note-list">
         <ul>
-            <li ng-repeat="note in notes|filter:search">
+            <li ng-repeat="note in notes|filter:search" ng-click="showNote(note.id)">
                 <span class="title">
-                    <a ng-bind="note.title" ng-click="showNote(note.id)"></a>
+                    <span ng-bind="note.title"></span>
                 </span>
                     <span class="update"
                           ng-bind="note.editTime?note.editTime:note.postTime|date:'yyyy-MM-dd HH:mm:ss'"></span>

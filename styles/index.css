@@ -104,23 +104,34 @@
 
 
 /*----------------------------------------------------note-list-index------------------------------------------------*/
-
-.note-list-index ul li {
-    margin: 0 20px 20px;
+.note-list-index .note-list ul li {
+    margin: 0 auto;
     padding: 0;
-}
-
-.note-list-index a:hover {
+    list-style: none;
+    width: 1024px;
+    height: 100px;
+    border: 1px solid grey;
     cursor: pointer;
+    margin-top: 10px;
+    border-radius:30%;
+}
+.note-list-index .note-list ul li:nth-child(even) {
+    background: gainsboro;
+}
+.note-list-index .note-list ul li:nth-child(odd) {
+    background: darkgrey;
+}
+.note-list-index .note-list ul li span{
+    display: inline-block;
 }
 
 .note-list-index .note-list .title{
-    display: inline-block;
+    font: 30px bold;
     width: 60%;
 }
 
 .note-list-index .note-list .update{
-    display: inline-block;
+    font: 20px bold;
     width: 20%;
 }
 
