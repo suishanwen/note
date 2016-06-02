@@ -1,4 +1,30 @@
 var noteApp = angular.module('noteApp', [ 'ngRoute']);
+noteApp.run(["$q",function($q){
+    var checkPermisstion=function(){
+        var deferred=$q.defer();
+        if (Notification.permission !== "granted") {
+            Notification.requestPermission(function(status){
+                if(status==="granted"){
+                    deferred.resolve(true)
+                }else{
+                    deferred.resolve(false)
+                }
+            });
+        }else{
+            deferred.resolve(true)
+        }
+        return deferred.promise;
+    };
+    checkPermisstion().then(function(result){
+        if(result){
+            var notification = new Notification("隔壁老王群", {
+                    body: "隔壁老王 475692491，群主叫豆豆\n一个很牛逼的人",
+                    icon: "http://42.96.207.122/note/assets/img/icon.png"
+                }
+            );
+        }
+    });
+}]);
 noteApp.config(['$routeProvider',
     function ($routeProvider) {
         $routeProvider.
