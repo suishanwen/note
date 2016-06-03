@@ -17,11 +17,7 @@ noteApp.run(["$q",function($q){
     };
     checkPermisstion().then(function(result){
         if(result){
-            var notification = new Notification("隔壁老王群", {
-                    body: "隔壁老王 475692491，群主叫豆豆\n一个很牛逼的人",
-                    icon: "http://42.96.207.122/note/assets/img/icon.png"
-                }
-            );
+            notify("隔壁老王群", "隔壁老王 475692491，群主叫豆豆\n一个很牛逼的人");
         }
     });
 }]);

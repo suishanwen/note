@@ -5,7 +5,7 @@ var NoteListController = function ($scope, $http, $location,noteService) {
         $http.get(url).success(function (data) {
             $scope.notes=data;
         }).error(function (data) {
-            alert("获取数据失败！");
+            notify("系统提示", "获取数据失败！");
         });
     };
     getNotes();

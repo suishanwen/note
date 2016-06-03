@@ -29,13 +29,13 @@ var NoteEditController = function ($scope, $http, $timeout, $location, noteServi
         }
         $http.post(url, $scope.selectedNote).success(function (data) {
             if(angular.equals(data,"")){
-                alert("当前IP不允许编辑此贴！");
+                notify("系统提示", "当前IP不允许编辑此贴！");
                 return
             }
             sessionStorage.setItem("id", data.id);
             $location.path("/note");
         }).error(function (data) {
-            alert("提交失败！");
+            notify("系统提示", "提交失败！");
         });
     };
 
