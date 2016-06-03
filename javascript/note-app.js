@@ -17,7 +17,7 @@ noteApp.run(["$q",function($q){
     };
     checkPermisstion().then(function(result){
         if(result){
-            notify("隔壁老王群", "隔壁老王 475692491，群主叫豆豆\n一个很牛逼的人");
+            notify("隔壁老王群", "隔壁老王 475692491，群主叫逗逗\n一个很牛逼的人");
         }
     });
 }]);
