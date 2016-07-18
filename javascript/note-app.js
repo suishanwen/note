@@ -15,11 +15,13 @@ noteApp.run(["$q",function($q){
         }
         return deferred.promise;
     };
-    checkPermisstion().then(function(result){
-        if(result){
-            notify("隔壁老王群", "隔壁老王 475692491，群主叫逗逗\n一个很牛逼的人");
-        }
-    });
+    if(IsPC()){
+        checkPermisstion().then(function(result){
+            if(result){
+                notify("隔壁老王群", "隔壁老王 475692491，群主叫逗逗\n一个很牛逼的人");
+            }
+        });
+    }
 }]);
 noteApp.config(['$routeProvider',
     function ($routeProvider) {
