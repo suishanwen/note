@@ -27,8 +27,11 @@ var NoteEditController = function ($scope, $http, $timeout, $location, noteServi
         } else {
             url = noteService.server + "api/note/add/";
         }
+        $scope.$apply(function(){
+            $scope.selectedNote.content = $("#content").val();
+        });
         $http.post(url, $scope.selectedNote).success(function (data) {
-            if(angular.equals(data,"")){
+            if(angular.equals(data,"")||angular.equals(data,null)){
                 notify("系统提示", "当前IP不允许编辑此贴！");
                 return
             }
