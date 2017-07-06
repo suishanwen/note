@@ -60,7 +60,7 @@ noteApp
 
 noteApp.service('noteService', function () {
     return {
-        server: 'http://localhost:8999/'
+        server: 'http://121.42.239.151:89/'
     }
 });
 
